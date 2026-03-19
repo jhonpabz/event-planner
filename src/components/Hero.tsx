@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import masthead from '../assets/home/masthead.jpg';
 
 export default function Hero() {
   const scrollToContact = () => {
@@ -18,12 +19,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center"
+      className="relative flex items-center justify-center h-screen"
     >
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: `url(${masthead})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -31,21 +32,21 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-          Creating Unforgettable
-          <span className="block text-rose-300">Moments</span>
+      <div className="relative z-10 max-w-4xl px-4 mx-auto text-center sm:px-6 lg:px-8">
+        <h1 className="mb-6 font-serif text-5xl font-bold leading-tight text-white md:text-7xl">
+        Naguilian Fairytale 
+          <span className="block text-rose-300">Events & Services</span>
         </h1>
-        <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Transform your dreams into reality with our expert event planning and flawless execution
+        <p className="max-w-2xl mx-auto mb-10 text-xl leading-relaxed text-gray-200 md:text-2xl">
+        Wedding Parties, birthdays, Anniversary's make it magic & memorable - will tailor made to your taste.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <button
             onClick={scrollToContact}
-            className="group bg-rose-500 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-rose-600 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center justify-center"
+            className="flex items-center justify-center px-8 py-4 text-lg font-medium text-white transition-all duration-300 transform rounded-lg shadow-xl group bg-rose-500 hover:bg-rose-600 hover:scale-105 hover:shadow-2xl"
           >
             Start Planning
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
           </button>
           <button
             onClick={() => {
@@ -57,16 +58,16 @@ export default function Hero() {
                 window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
               }
             }}
-            className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-white/20 transition-all duration-300 border-2 border-white/50"
+            className="px-8 py-4 text-lg font-medium text-white transition-all duration-300 border-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 border-white/50"
           >
             Our Services
           </button>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
+      <div className="absolute transform -translate-x-1/2 bottom-8 left-1/2 animate-bounce">
+        <div className="flex justify-center w-6 h-10 border-2 border-white rounded-full">
+          <div className="w-1 h-3 mt-2 bg-white rounded-full"></div>
         </div>
       </div>
     </section>
