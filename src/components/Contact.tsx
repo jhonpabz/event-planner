@@ -1,13 +1,51 @@
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
-import { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 
 export default function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setFormSubmitted(true);
-    setTimeout(() => setFormSubmitted(false), 5000);
+
+    if (isSubmitting) return;
+
+    setSubmitError(null);
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    // Basic spam trap: if the hidden field has a value, ignore silently.
+    const botField = formData.get('bot-field');
+    if (typeof botField === 'string' && botField.trim().length > 0) {
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Add a subject line for the received email.
+    formData.set('_subject', 'New Contact Form Submission');
+
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/jhncsrpbl@gmail.com', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData
+      });
+
+      if (!res.ok) {
+        throw new Error(`Request failed: ${res.status}`);
+      }
+
+      setFormSubmitted(true);
+      form.reset();
+      setTimeout(() => setFormSubmitted(false), 5000);
+    } catch {
+      setSubmitError('Sorry—something went wrong sending your message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -86,14 +124,9 @@ export default function Contact() {
 
           <div>
             <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="space-y-6"
             >
-              <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
                 <label>
                   Don't fill this out if you're human: <input name="bot-field" />
@@ -181,11 +214,18 @@ export default function Contact() {
                 </div>
               )}
 
+              {submitError && (
+                <div className="px-4 py-3 text-red-800 border border-red-200 rounded-lg bg-red-50">
+                  {submitError}
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="flex items-center justify-center w-full px-8 py-4 text-lg font-medium text-white transition-all duration-300 transform rounded-lg shadow-lg bg-rose-500 hover:bg-rose-600 hover:scale-105 hover:shadow-xl"
+                disabled={isSubmitting}
+                className="flex items-center justify-center w-full px-8 py-4 text-lg font-medium text-white transition-all duration-300 transform rounded-lg shadow-lg bg-rose-500 hover:bg-rose-600 hover:scale-105 hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                Send Message
+                {isSubmitting ? 'Sending…' : 'Send Message'}
                 <Send className="w-5 h-5 ml-2" />
               </button>
             </form>
