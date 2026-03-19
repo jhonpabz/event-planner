@@ -6,7 +6,7 @@ export default function Testimonials() {
       name: 'Sarah & Michael Chen',
       event: 'Wedding',
       image: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=200',
-      text: 'Elegance Events made our wedding day absolutely perfect. Every detail was meticulously planned and executed. They turned our vision into reality and exceeded all our expectations. We couldn\'t have asked for a better team!',
+      text: 'Naguilian Fairytale made our wedding day absolutely perfect. Every detail was meticulously planned and executed. They turned our vision into reality and exceeded all our expectations. We couldn\'t have asked for a better team!',
       rating: 5,
     },
     {
@@ -48,32 +48,32 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 font-serif text-4xl font-bold text-gray-900 md:text-5xl">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="max-w-3xl mx-auto text-xl text-gray-600">
             Don't just take our word for it—hear from the clients who trusted us
             to make their special moments unforgettable
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 relative"
+              className="relative p-8 transition-shadow duration-300 bg-white shadow-lg rounded-xl hover:shadow-2xl"
             >
-              <Quote className="absolute top-6 right-6 h-12 w-12 text-rose-100" />
+              <Quote className="absolute w-12 h-12 top-6 right-6 text-rose-100" />
 
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                 ))}
               </div>
 
-              <p className="text-gray-700 mb-6 leading-relaxed relative z-10">
+              <p className="relative z-10 mb-6 leading-relaxed text-gray-700">
                 {testimonial.text}
               </p>
 
@@ -81,7 +81,7 @@ export default function Testimonials() {
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
+                  className="object-cover w-12 h-12 mr-4 rounded-full"
                 />
                 <div>
                   <p className="font-bold text-gray-900">{testimonial.name}</p>

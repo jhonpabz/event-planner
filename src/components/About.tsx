@@ -4,8 +4,8 @@ import about from '../assets/home/about.jpg';
 
 export default function About() {
   const stats = [
-    { icon: Award, value: '500+', label: 'Events Completed' },
-    { icon: Users, value: '10K+', label: 'Happy Clients' },
+    { icon: Award, value: '5+', label: 'Events Completed' },
+    { icon: Users, value: '10+', label: 'Happy Clients' },
     { icon: Sparkles, value: '2+', label: 'Years Experience' },
     { icon: Clock, value: '100%', label: 'On-Time Delivery' },
   ];

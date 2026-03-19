@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900">Address</h4>
-                  <p className="text-gray-600">123 Event Plaza, Suite 456<br />New York, NY 10001</p>
+                  <p className="text-gray-600">Lioac Norte , Naguilian, La Union, <br />Naguilian, Philippines, 2511</p>
                 </div>
               </div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+63 916 695 7947</p>
                 </div>
               </div>
 
@@ -54,7 +54,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">hello@eleganceevents.com</p>
+                  <p className="text-gray-600">delisreyes@icloud.com</p>
                 </div>
               </div>
             </div>

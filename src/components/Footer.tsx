@@ -18,56 +18,55 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+    <footer className="text-gray-300 bg-gray-900">
+      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid gap-8 mb-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Heart className="h-8 w-8 text-rose-500 fill-current" />
-              <span className="text-2xl font-serif font-bold text-white">
-                Elegance Events
+            <div className="flex items-center mb-4 space-x-2">
+              <Heart className="w-8 h-8 fill-current text-rose-500" />
+              <span className="font-serif text-2xl font-bold text-white">
+              Naguilian Fairytale
               </span>
             </div>
-            <p className="text-gray-400 mb-4 leading-relaxed">
-              Creating unforgettable moments and extraordinary experiences for over 15 years.
-              Let us transform your dreams into reality with our expert event planning services.
+            <p className="mb-4 leading-relaxed text-gray-400">
+            Wedding Parties, birthdays, Anniversary's make it magic & memorable - will tailor made to your taste.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-rose-500 transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
+                <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-rose-500 transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
+                <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-rose-500 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
+                <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-rose-500 transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-4">Quick Links</h3>
+            <h3 className="mb-4 font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <button onClick={() => scrollToSection('home')} className="hover:text-rose-400 transition-colors">
+                <button onClick={() => scrollToSection('home')} className="transition-colors hover:text-rose-400">
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('about')} className="hover:text-rose-400 transition-colors">
+                <button onClick={() => scrollToSection('about')} className="transition-colors hover:text-rose-400">
                   About
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('services')} className="hover:text-rose-400 transition-colors">
+                <button onClick={() => scrollToSection('services')} className="transition-colors hover:text-rose-400">
                   Services
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('gallery')} className="hover:text-rose-400 transition-colors">
+                <button onClick={() => scrollToSection('gallery')} className="transition-colors hover:text-rose-400">
                   Gallery
                 </button>
               </li>
@@ -75,20 +74,20 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-4">Services</h3>
+            <h3 className="mb-4 font-bold text-white">Services</h3>
             <ul className="space-y-2">
-              <li className="hover:text-rose-400 transition-colors cursor-pointer">Wedding Planning</li>
-              <li className="hover:text-rose-400 transition-colors cursor-pointer">Corporate Events</li>
-              <li className="hover:text-rose-400 transition-colors cursor-pointer">Social Celebrations</li>
-              <li className="hover:text-rose-400 transition-colors cursor-pointer">Destination Events</li>
+              <li className="transition-colors cursor-pointer hover:text-rose-400">Wedding Planning</li>
+              <li className="transition-colors cursor-pointer hover:text-rose-400">Corporate Events</li>
+              <li className="transition-colors cursor-pointer hover:text-rose-400">Social Celebrations</li>
+              <li className="transition-colors cursor-pointer hover:text-rose-400">Destination Events</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center">
+        <div className="pt-8 text-center border-t border-gray-800">
           <p className="text-gray-400">
-            {currentYear} Elegance Events. All rights reserved. Made with{' '}
-            <Heart className="inline h-4 w-4 text-rose-500 fill-current" /> for unforgettable moments
+            {currentYear} Naguilian Fairytale Events & Services. All rights reserved. Made with{' '}
+            <Heart className="inline w-4 h-4 fill-current text-rose-500" /> for unforgettable moments
           </p>
         </div>
       </div>
