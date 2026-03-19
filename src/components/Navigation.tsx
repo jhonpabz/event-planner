@@ -37,7 +37,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
     { id: "about", label: "About" },
     { id: "services", label: "Services" },
     { id: "gallery", label: "Gallery" },
-    { id: "testimonials", label: "Testimonials" },
+    // { id: "testimonials", label: "Testimonials" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -47,8 +47,8 @@ export default function Navigation({ activeSection }: NavigationProps) {
         isScrolled ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
           <div
             className="flex items-center space-x-2 cursor-pointer"
             onClick={() => scrollToSection("home")}
@@ -63,7 +63,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
             </span>
           </div>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden space-x-8 md:flex">
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -101,7 +101,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="bg-white shadow-lg md:hidden">
           <div className="px-4 pt-2 pb-4 space-y-2">
             {navLinks.map((link) => (
               <button
