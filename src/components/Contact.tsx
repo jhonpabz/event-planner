@@ -57,6 +57,21 @@ export default function Contact() {
                   <p className="text-gray-600">delisreyes@icloud.com</p>
                 </div>
               </div>
+
+              <a
+                href="https://www.facebook.com/marivic.delosreyes.5070"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center p-3 transition-colors rounded-lg cursor-pointer bg-rose-100 hover:bg-rose-200"
+              >
+                <div className="flex items-center justify-center w-10 h-10 mr-4 text-white rounded-full bg-rose-500">
+                  <span className="text-sm font-semibold">M</span>
+                </div>
+                <div>
+                  <h4 className="mb-1 font-semibold text-gray-900">Messenger</h4>
+                  <p className="text-gray-600">Marivic Delos Reyes</p>
+                </div>
+              </a>
             </div>
 
             <div className="p-6 mt-8 bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl">
