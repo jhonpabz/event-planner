@@ -110,7 +110,7 @@ export default function Contact() {
                   name="name"
                   required
                   className="w-full px-4 py-3 transition-all border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent"
-                  placeholder="John Doe"
+                  placeholder="John Dave"
                 />
               </div>
 
@@ -137,7 +137,7 @@ export default function Contact() {
                   id="phone"
                   name="phone"
                   className="w-full px-4 py-3 transition-all border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent"
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+63 (955) 123-4567"
                 />
               </div>
 

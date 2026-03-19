@@ -32,18 +32,18 @@ export default function Footer() {
             Wedding Parties, birthdays, Anniversary's make it magic & memorable - will tailor made to your taste.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
+              <a href="https://www.facebook.com/profile.php?id=61585031152740" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
+              {/* <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 transition-colors bg-gray-800 rounded-lg hover:bg-rose-500">
                 <Linkedin className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
