@@ -28,7 +28,7 @@ export default function Contact() {
     formData.set('_subject', 'New Contact Form Submission');
 
     try {
-      const res = await fetch('https://formsubmit.co/ajax/jhncsrpbl@gmail.com', {
+      const res = await fetch('https://formsubmit.co/ajax/delisreyes@icloud.com', {
         method: 'POST',
         headers: { Accept: 'application/json' },
         body: formData
