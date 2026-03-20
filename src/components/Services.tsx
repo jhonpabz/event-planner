@@ -4,7 +4,7 @@ import gardenVenueImg from '../assets/services/venue.jpg';
 import socialCelebrationsImg from '../assets/services/social-celebrations.jpg';
 import destinationEventsImg from '../assets/services/destination-events.jpg';
 import eventConsultationImg from '../assets/services/event-consultation.jpg';
-import dayOfCoordinationImg from '../assets/services/day-of-coordination.jpg';
+import foodCateringImg from '../assets/services/food-catering.jpg';
 
 export default function Services() {
   const services = [
@@ -40,9 +40,9 @@ export default function Services() {
     },
     {
       icon: Calendar,
-      title: 'Day-of Coordination',
-      description: 'Professional coordination on your event day, ensuring everything runs smoothly while you enjoy your celebration.',
-      image: dayOfCoordinationImg,
+      title: 'Food Catering',
+      description: 'We offer catering assistance through our trusted partners, providing a variety of food options perfect for any occasion.',
+      image: foodCateringImg,
     },
   ];
 

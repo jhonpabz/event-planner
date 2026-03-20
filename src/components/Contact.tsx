@@ -190,7 +190,7 @@ export default function Contact() {
                   <option value="social">Social Celebrations</option>
                   <option value="destination">Destination Events</option>
                   <option value="consultation">Event Consultation</option>
-                  <option value="coordination">Day-of Coordination</option>
+                  <option value="coordination">Food Catering</option>
                 </select>
               </div>
 
