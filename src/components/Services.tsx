@@ -54,8 +54,8 @@ export default function Services() {
             Our Services
           </h2>
           <p className="max-w-3xl mx-auto text-xl text-gray-600">
-            From intimate gatherings to grand celebrations, we offer comprehensive event planning services
-            tailored to your unique vision and needs
+            Serving Naguilian &amp; La Union, from intimate gatherings to grand celebrations. We offer comprehensive event planning
+            services tailored to your unique vision and needs.
           </p>
         </div>
 

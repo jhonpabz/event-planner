@@ -20,7 +20,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 leading-relaxed text-gray-600">
               <p className="text-lg">
-                Naguilian Fairytale Events & Services has been transforming visions into extraordinary experiences.
+                Naguilian Fairytale Events & Services in Naguilian, La Union has been transforming visions into extraordinary experiences.
                 We believe every celebration tells a unique story, and we're passionate about bringing those stories to life
                 with creativity, precision, and heart.
               </p>

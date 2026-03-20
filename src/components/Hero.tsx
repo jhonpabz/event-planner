@@ -38,7 +38,7 @@ export default function Hero() {
           <span className="block text-rose-300">Events & Services</span>
         </h1>
         <p className="max-w-2xl mx-auto mb-10 text-xl leading-relaxed text-gray-200 md:text-2xl">
-        Wedding Parties, birthdays, Anniversary's make it magic & memorable - will tailor made to your taste.
+          Wedding parties, birthdays, and anniversaries in Naguilian, La Union—made magical and memorable, and tailored to your taste.
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <button

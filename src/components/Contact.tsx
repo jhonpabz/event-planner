@@ -56,8 +56,8 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="max-w-3xl mx-auto text-xl text-gray-600">
-            Ready to start planning your perfect event? Contact us today for a consultation
-            and let's bring your vision to life
+            Ready to start planning your perfect event in Naguilian, La Union? Contact us today for a consultation and let's
+            bring your vision to life.
           </p>
         </div>
 

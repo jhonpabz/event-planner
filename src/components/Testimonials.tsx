@@ -13,7 +13,7 @@ export default function Testimonials() {
       name: 'Jennifer Martinez',
       event: 'Corporate Conference',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
-      text: 'Our annual corporate conference was a huge success thanks to Elegance Events. Their professionalism and attention to detail impressed both our clients and team. They handled everything seamlessly from start to finish.',
+      text: 'Our annual corporate conference was a huge success thanks to Naguilian Fairytale. Their professionalism and attention to detail impressed both our clients and team. They handled everything seamlessly from start to finish.',
       rating: 5,
     },
     {
@@ -27,7 +27,7 @@ export default function Testimonials() {
       name: 'Emily & James Wilson',
       event: 'Destination Wedding',
       image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200',
-      text: 'Planning a destination wedding seemed daunting, but Elegance Events made it effortless. They coordinated everything remotely and on-site with such grace. Our beach wedding in Bali was absolutely magical!',
+      text: 'Planning a destination wedding seemed daunting, but Naguilian Fairytale made it effortless. They coordinated everything remotely and on-site with such grace. Our beach wedding in Bali was absolutely magical!',
       rating: 5,
     },
     {
