@@ -111,15 +111,7 @@ export default function Contact() {
                 </div>
               </a>
             </div>
-
-            <div className="p-6 mt-8 bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl">
-              <h4 className="mb-3 font-bold text-gray-900">Office Hours</h4>
-              <div className="space-y-2 text-gray-700">
-                <p><span className="font-medium">Monday - Friday:</span> 9:00 AM - 6:00 PM</p>
-                <p><span className="font-medium">Saturday:</span> 10:00 AM - 4:00 PM</p>
-                <p><span className="font-medium">Sunday:</span> By Appointment</p>
-              </div>
-            </div>
+            
           </div>
 
           <div>
