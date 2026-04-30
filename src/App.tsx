@@ -1,44 +1,22 @@
-import { useState, useEffect } from 'react';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import GalleryEventsPage from "./pages/GalleryEventsPage";
+import EventGalleryPage from "./pages/EventGalleryPage";
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'gallery', 'testimonials', 'contact'];
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      if (current) setActiveSection(current);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const [activeSection, setActiveSection] = useState("home");
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white scroll-smooth">
       <Navigation activeSection={activeSection} />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Gallery />
-        {/* <Testimonials /> */}
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<HomePage onActiveSectionChange={setActiveSection} />} />
+        <Route path="/gallery" element={<GalleryEventsPage />} />
+        <Route path="/gallery/:eventRoute" element={<EventGalleryPage />} />
+      </Routes>
       <Footer />
     </div>
   );
